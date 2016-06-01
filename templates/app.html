@@ -1,7 +1,13 @@
-<h1>Component Router</h1>
-<nav>
-    <a [routerLink]="['/home']">Home</a>
-    <a [routerLink]="['/version-control']">Version Control</a>
-    <a [routerLink]="['/webcam-viewer']">Webcam Viewer</a>
-</nav>
-<router-outlet></router-outlet>
+<div id="content">
+    <div class="header">
+        <a [routerLink]="['/home']"><h1>Pantherbotics Version Control Server</h1></a>
+        <h2>Robotics Club Internal Webserver</h2>
+        <p class="info info-top info-bottom">
+            Welcome to the NPHS Robotics club's internally accessible webserver. <br />This website is a portal to some of
+            our internally developed applications and systems. <br />If you are not part of the software team or using the
+            3D printer you probably don't need to use this site.
+            <br>
+        </p>
+    </div>
+    <router-outlet></router-outlet>
+</div>
